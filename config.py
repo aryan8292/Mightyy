@@ -19,10 +19,10 @@ APP_ID = int(os.environ.get("APP_ID", "23004940"))
 API_HASH = os.environ.get("API_HASH", "25c013f901474cffcad6a9d03e3a06bb")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002198773753"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002137018294"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6367302898"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "5079629749"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
@@ -34,7 +34,7 @@ DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "inshorturl.com")
 SHORTLINK_API = os.environ.get("SHORTLINK_API", "d085b925c2b0bafde56a5729a018f45655ad9602")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86300)) # Add time in seconds
-IS_VERIFY = os.environ.get("IS_VERIFY", "True")
+IS_VERIFY = os.environ.get("IS_VERIFY", "False")
 TUT_VID = os.environ.get("TUT_VID","gojfsi/2")
 
 
@@ -47,7 +47,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "100"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "7208538115 5170148912 6616938712").split()):
+    for x in (os.environ.get("ADMINS", "5079629749").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -67,8 +67,8 @@ DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "Join Posting Channel From  @Direct_vid For More Links/Files!"
 
-ADMINS.append(6367302898)
-ADMINS.append(7208538115)
+ADMINS.append(5079629749)
+ADMINS.append(5079629749)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
